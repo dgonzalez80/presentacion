@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>Introducción a R</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="IV - Encuentro Colombiano de Educación Estocástica" />
+    <meta name="date" content="2021-06-01" />
+    <script src="libs/header-attrs-2.8/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/default-fonts.css" rel="stylesheet" />
+    <link href="libs/panelset-0.2.6/panelset.css" rel="stylesheet" />
+    <script src="libs/panelset-0.2.6/panelset.js"></script>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# Introducción a R
+## Aplicaciones a la enseñanza de la Estadística
+### IV - Encuentro Colombiano de Educación Estocástica
+### Daniel Enrique González Gómez
+### 2021-06-01
+
+---
+
+
+
+
+&lt;html&gt;
+&lt;div class="container-wrapper-genially" style="position: relative; min-height: 400px; max-width: 100%;"&gt;&lt;video class="loader-genially" autoplay="autoplay" loop="loop" playsinline="playsInline" muted="muted" style="position: absolute;top: 45%;left: 50%;transform: translate(-50%, -50%);width: 80px;height: 80px;margin-bottom: 10%"&gt;&lt;source src="https://static.genial.ly/resources/panel-loader-low.mp4" type="video/mp4" /&gt;Your browser does not support the video tag.&lt;/video&gt;&lt;div id="5f2ae96b94d21c0d831cdb4c" class="genially-embed" style="margin: 0px auto; position: relative; height: auto; width: 100%;"&gt;&lt;/div&gt;&lt;/div&gt;&lt;script&gt;(function (d) { var js, id = "genially-embed-js", ref = d.getElementsByTagName("script")[0]; if (d.getElementById(id)) { return; } js = d.createElement("script"); js.id = id; js.async = true; js.src = "https://view.genial.ly/static/embed/embed.js"; ref.parentNode.insertBefore(js, ref); }(document));&lt;/script&gt;
+&lt;/html&gt;
+---
+&lt;img src="img/Modulo1.png" width="200"&gt;
+
+### Sumatoria
+
+
+```
+## [1] 55
+```
+
+
+```
+## [1] NA
+```
+
+
+```
+## [1] 45
+```
+---
+### Sumatoria
+
+
+```
+##  [1]  1  3  6 10 15 21 28 36 45 55
+```
+
+
+`$$\dfrac{\displaystyle\sum_{i=1}^{n}(x_{i}-\bar{x})^2}{n-1}$$`
+
+
+```
+## [1] 9.166667
+```
+
+```
+## [1] 9.166667
+```
+---
+### Permutaciones - combinaciones
+
+```
+## [1] 12
+```
+
+
+
+```
+## [1] 6
+```
+---
+### Permutaciones 
+
+```
+##       [,1] [,2]
+##  [1,]    1    2
+##  [2,]    1    3
+##  [3,]    1    4
+##  [4,]    2    1
+##  [5,]    2    3
+##  [6,]    2    4
+##  [7,]    3    1
+##  [8,]    3    2
+##  [9,]    3    4
+## [10,]    4    1
+## [11,]    4    2
+## [12,]    4    3
+```
+
+```
+## Total grupos :  12
+```
+
+---
+### Combinaciones
+
+```
+##       [,1] [,2]
+##  [1,]    1    2
+##  [2,]    1    3
+##  [3,]    1    4
+##  [4,]    1    5
+##  [5,]    2    3
+##  [6,]    2    4
+##  [7,]    2    5
+##  [8,]    3    4
+##  [9,]    3    5
+## [10,]    4    5
+```
+
+```
+## Total grupos :  10
+```
+---
+### Permutaciones en urna 
+
+```
+##       [,1]    [,2]   
+##  [1,] "Azul"  "Azul" 
+##  [2,] "Azul"  "Rojo" 
+##  [3,] "Azul"  "Verde"
+##  [4,] "Rojo"  "Azul" 
+##  [5,] "Rojo"  "Rojo" 
+##  [6,] "Rojo"  "Verde"
+##  [7,] "Verde" "Azul" 
+##  [8,] "Verde" "Rojo" 
+##  [9,] "Verde" "Verde"
+```
+---
+### Gráficos de funciones 2D 
+
+$$f(x)=\dfrac{x}{2}\hspace{.5cm}   0 \leq x \leq 1 $$
+.pull-left[
+
+]
+
+.pull-right[
+![](Presentacion3_files/figure-html/unnamed-chunk-19-1.png)&lt;!-- --&gt;
+]
+---
+### Gráficos 2D
+$$f(x)= \dfrac{1}{22} exp\{-x/22\} \hspace{.5cm} x \geq 0  $$
+
+.pull-left[ 
+
+]
+.pull-right[
+
+```
+## RStudio Community is a great place to get help: https://community.rstudio.com/c/tidyverse
+```
+
+![](Presentacion3_files/figure-html/unnamed-chunk-21-1.png)&lt;!-- --&gt;
+
+]
+
+---
+### Gráficos de funciones 3D 
+.pull-left[ 
+
+
+]
+.pull-right[
+![](Presentacion3_files/figure-html/unnamed-chunk-23-1.png)&lt;!-- --&gt;
+]
+.footnote[[*]  Cual es la función?]
+
+---
+### Gráficos de funciones 3D 
+
+$$f(x,y)= x+y $$
+.pull-left[
+
+]
+
+.pull-right[
+![](Presentacion3_files/figure-html/unnamed-chunk-25-1.png)&lt;!-- --&gt;
+]
+---
+### Gráficos de funciones 3D 
+
+`$$f(x,y)= \dfrac{48 xy}{49}$$`
+
+.pull-left[ 
+
+]
+.pull-right[
+![](Presentacion3_files/figure-html/unnamed-chunk-27-1.png)&lt;!-- --&gt;
+]
+
+.footnote[[*]  Cual es la función? ]
+---
+### Integración
+
+
+.pull-left[
+&lt;img src="img/fx40.png" width="230"&gt;
+
+]
+.pull-right[
+![](Presentacion3_files/figure-html/unnamed-chunk-29-1.png)&lt;!-- --&gt;
+
+```
+## [1] 0.25
+```
+]
+---
+### Integración- triples
+
+.pull-left[ 
+&lt;img src="img/fx60.png" width="450"&gt;
+
+
+]
+.pull-right[
+
+```
+## $integral
+## [1] 0.0625
+## 
+## $error
+## [1] 1.387779e-17
+## 
+## $functionEvaluations
+## [1] 33
+## 
+## $returnCode
+## [1] 0
+```
+]
+
+---
+.pull-left[
+&lt;img src="img/Modulo2.png" width="200"&gt;
+
+
+
+
+
+]
+n
+.pull-right[
+![](Presentacion3_files/figure-html/unnamed-chunk-34-1.png)&lt;!-- --&gt;
+]
+
+
+---
+## Primer dia de clases
+.pull-left[ 
+
+
+
+
+
+
+]
+.pull-right[
+&lt;img src="img/grupos.png" width="430"&gt;
+&lt;img src="img/grupos2.png" width="430"&gt;
+]
+---
+## Problema de los dados
+
+.pull-left[ 
+
+
+
+```
+## [1] 1
+```
+
+
+
+
+```
+##  [1] 4 6 5 2 4 4 6 6 1 3
+```
+
+
+
+
+```
+##  [1]  6 10  5  8  2  6  7  7  3  7
+```
+
+
+]
+.pull-right[
+&lt;img src="img/giphy.gif" width="500"&gt;
+
+.footnote[[*] tomado de: https://weloversize.com/compras-por-menos-de-10e-para-mejorar-tus-polvazos/]
+]
+---
+## Problema de los dados
+.pull-right[
+
+]n
+.pull-left[ 
+
+
+
+```
+##      [,1] [,2]
+## [1,]    6    6
+## [2,]    5    6
+## [3,]    5    3
+## [4,]    1    4
+## [5,]    3    4
+```
+
+
+
+
+
+]
+.pull-right[
+![](Presentacion3_files/figure-html/unnamed-chunk-48-1.png)&lt;!-- --&gt;
+
+
+```
+## sdd
+##   5   7   8  11  12 
+## 0.2 0.2 0.2 0.2 0.2
+```
+] 
+
+---
+## Problema de los dados
+.pull-right[
+
+]
+.pull-left[ 
+
+]
+.pull-right[
+![](Presentacion3_files/figure-html/unnamed-chunk-51-1.png)&lt;!-- --&gt;
+] 
+
+
+```
+## sdd
+##      2      3      4      5      6      7      8      9     10     11     12 
+## 0.0285 0.0519 0.0809 0.1090 0.1362 0.1661 0.1450 0.1129 0.0864 0.0569 0.0262
+```
+
+---
+&lt;img src="img/Modulo3.png" width="200"&gt;
+.pull-left[ 
+
+&lt;img src="img/Rmodelos.png" width="600"&gt;
+]
+.pull-right[
+
+] 
+---
+### Modelos especiales - gráficos
+
+
+.panelset[
+.panel[.panel-name[binomial]
+  
+.pull-left[
+
+]
+.pull-right[
+![](Presentacion3_files/figure-html/unnamed-chunk-56-1.png)&lt;!-- --&gt;
+]
+]
+.panel[.panel-name[Poisson]
+  
+.pull-left[
+
+]
+
+.pull-right[
+![](Presentacion3_files/figure-html/unnamed-chunk-58-1.png)&lt;!-- --&gt;
+]  
+]
+.panel[.panel-name[uniforme c.]
+  
+.pull-left[
+
+]
+
+.pull-right[
+![](Presentacion3_files/figure-html/unnamed-chunk-60-1.png)&lt;!-- --&gt;
+]  
+]  
+.panel[.panel-name[normal]
+  
+.pull-left[
+
+]
+
+.pull-right[
+![](Presentacion3_files/figure-html/unnamed-chunk-62-1.png)&lt;!-- --&gt;
+]  
+]  
+.panel[.panel-name[exponencial]
+
+.pull-left[
+
+]
+.pull-right[
+![](Presentacion3_files/figure-html/unnamed-chunk-64-1.png)&lt;!-- --&gt;
+]
+]  
+.panel[.panel-name[Weibull]
+
+.pull-left[
+
+]
+
+.pull-right[
+![](Presentacion3_files/figure-html/unnamed-chunk-66-1.png)&lt;!-- --&gt;
+]
+]
+
+.panel[.panel-name[gamma]
+.pull-left[
+
+]
+.pull-right[
+![](Presentacion3_files/figure-html/unnamed-chunk-68-1.png)&lt;!-- --&gt;
+]
+]  
+]
+
+---
+### Modelos especiales
+
+En **R** los nombres de las funciones diseñadas para los cálculos requeridos están conformadas por dos partes: 
++ La primera parte con el propósito de la función (primera letra) 
++ La segunda parte hace referencia al modelo a utilizar ( en el caso binomial binom)
+
+| letra    | detalle                                   |
+|:--------:|:------------------------------------------|
+|	**p**    | función de distribución acumulada `\(F(x)\)`  |
+|	**q**    | percentil                                 | 
+|	**d**    | densidad de probabilidad `\(P(X=x)\)`         |
+|	**r**    | variable aleatoria                        |
+
+Para variables aleatoria discreta con distribución binomial `\(X\sim b(x;20,0.30)\)`
+`\(P(X=7)=\dbinom{20}{7} 0.30^{7} (10.30)^{(20-7)}\)` 
+
+```r
+dbinom(7, 20, 0.30) #&lt;&lt;  # P(X = 7)
+pbinom(7, 20, 0.30) #&lt;&lt;  # P(X  &lt;= 7)
+qbinom(0.25, 20, 0.30) #&lt;&lt;  Percentil 25
+```
+
+---
+####   Experimento de Montecarlo
+
+Es un método no determinista o estadístico numérico, usado para aproximar expresiones matemáticas complejas y costosas de evaluar con exactitud. El método se llamó así en referencia al Casino de Montecarlo (Mónaco) por ser “la capital del juego de azar”, al ser la ruleta un generador simple de números aleatorios. El nombre y el desarrollo sistemático de los métodos de Montecarlo datan aproximadamente de 1944 y se mejoraron enormemente con el desarrollo de la computadora.  
+
+El uso de los métodos de Montecarlo como herramienta de investigación, proviene del trabajo realizado en el desarrollo de la bomba atómica durante la Segunda Guerra Mundial en el Laboratorio Nacional de Los Álamos en EE. UU. Este trabajo conllevaba la simulación de problemas probabilísticos de hidrodinámica concernientes a la difusión de neutrones en el material de fisión. Esta difusión posee un comportamiento eminentemente aleatorio.	
+(tomado de Wikipedia) 
+
+**Ejemplo** : Se fabrican placas rectangulares cuyas longitudes en pulgadas se distribuyen como `\(N(2.0; 0.01)\)` y cuyos anchos se distribuyen `\(N(3.0; 0.04)\)`. Suponga que las longitudes y los anchos son independientes. El área de una placa esta dada por `\(A=XY\)`. (Problema 3 capitulo 4 Navidi(2006))
++ [a.] Utilice una muestra simulada de tamaño `\(1000\)` para estimar la media y la varianza de `\(A\)`.
++ [b.] Estime la probabilidad de que `\(P(5.9 &lt;A&lt;6.1)\)`.
++ [c.] Construya una gráfica de distribución normal `\((qqplot)\)` para el área. ¿El área de una placa sigue una distribución normal? 
+
+
+---
+
+
+---
+
+.pull-left[
+&lt;img src="img/simula2.png" height= 640  width="400"&gt;
+]
+.pull-right[
+A2  
+N: 1000  
+
+| Descriptive Statistics |        A2 |
+|------------------------| --------- |
+|    Mean                | 6.00      |
+|    Std.Dev             | 0.50      |
+|    Min                 | 4.27      |
+|    Q1                  | 5.67      |
+|    Median              |6.00       |
+|    Q3                  |6.33       |
+|    Max                 |7.52       |
+|    MAD                 |0.49       |
+|    IQR                 |0.66       |
+|    CV                  |0.08       |
+|    Skewness            |0.04       |
+|    SE.Skewness         |0.08       |
+|    Kurtosis            |-0.05      |
+|    N.Valid             |1000.00    | 
+|    Pct.Valid           |100.00     |
+
+]
+
+---
+### Concepto de correlación
+
+.pull-left[
+
+```r
+gen.corr.data&lt;- function(rho,n){
+ x &lt;- rnorm(n);  
+ z &lt;- rnorm(n); 
+ y&lt;- rho*x + sqrt(1-rho^2)*z ; result &lt;-cbind(y,x)
+  return(result)
+}
+par(mfrow = c(2, 2)) # matriz de graficos 2x2
+muestra&lt;-gen.corr.data(0,200);   plot(muestra, pch=19, main = "Correlació Rho=0");     grid()
+muestra&lt;-gen.corr.data(0.7,200); plot(muestra, pch=20, main = "Correlació Rho=0.7");grid()
+muestra&lt;-gen.corr.data(0.9,200); plot(muestra, pch=20, main = "Correlació Rho=0.9");grid()
+muestra&lt;-gen.corr.data(-0.6,200); plot(muestra, pch=20, main = "Correlación Rho=-0.6"); grid()
+```
+
+myCompiler
+
+https://www.mycompiler.io/online-r-compiler
+]
+.pull-right[
+&lt;img src="img/correlacion.png" height= 500  width="500"&gt;
+]
+
+---
+###  Teorema Central del Límite
+.pull-left[ 
+&lt;img src="img/Modulo4.png" width="200"&gt;
+
+
+]
+.pull-right[
+&lt;img src="img/TCL.png" height= 500  width="500"&gt;
+]
+---
+### Pruebas de hipotesis
+
+
+
+---
+
+### Prueba t-Student para una media , con distribucion normal
+`\(Ho:\mu \leq 1000\)` 
+`\(Ha:\mu &gt; 1000\)`
+
+
+
+
+
+```
+## 
+## 	One Sample t-test
+## 
+## data:  x
+## t = -0.1682, df = 9, p-value = 0.4351
+## alternative hypothesis: true mean is less than 10
+## 95 percent confidence interval:
+##      -Inf 11.68277
+## sample estimates:
+## mean of x 
+##      9.83
+```
+---
+### Prueba no parametrica de Signos
+`\(Ho:Me \leq 15\)` 
+
+`\(Ha:Me &gt; 15\)`
+
+
+
+
+
+```r
+	One-sample Sign-Test
+
+data:  x
+s = 13, p-value = 0.02452
+alternative hypothesis: true median is greater than 15
+95 percent confidence interval:
+  16 Inf
+sample estimates:
+median of x 
+         16 
+```
+
+
+---
+class: inverse, center, middle
+
+# Práctica 
+
+https://github.com/dgonzalez80/ACEdEstad2021/blob/main/codigoR/codigo3.R
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"ratio": "16:9"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
